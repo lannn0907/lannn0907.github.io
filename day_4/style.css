@@ -1,0 +1,51 @@
+body{
+    margin: 0%;
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    padding: 20px;
+    background-color: lightcyan;
+    color: black
+    
+}
+
+#menu{
+    padding: 35px;
+    background-color: lightblue;
+    grid-area: menu;
+
+}
+
+nav{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+#main_content{
+    padding: 35px;
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+    padding: 20px;
+    font-weight: bold;
+    background-color: lightcyan;
+    text-align: center;
+    color: black
+    
+}
+
+#Grid {
+    display: Grid;
+    grid-template-areas: 
+    "header header"
+    "menu main"
+    "footer footer"
+    ;
+    grid-template-columns: 1fr 6fr;
+}
